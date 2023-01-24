@@ -1,0 +1,74 @@
+<meta charset="UTF-8">
+
+<h1> PROGRAMA: INDICE DE MASA CORPORAL </h1>
+
+<input class="mi-clase"/>
+<button>encriptar</button>
+<script>
+
+    function saltarLinea () { 
+    	document.write ("<br>")
+    	document.write ("<br>")
+
+    }
+
+    function imprimir (texto) {
+
+    	document.write(texto)
+    	document.write ("<br>")
+    	document.write ("<br>")
+
+    }
+
+    
+    function encriptar (texto){
+
+    	let mensajeEncriptado  = document.querySelector("input").value;
+
+    	mensajeEncriptado=mensajeEncriptado.replace(/e/g, "enter");
+    	mensajeEncriptado=mensajeEncriptado.replace(/i/g, "imes");
+    	mensajeEncriptado=mensajeEncriptado.replace(/a/g, "ai");
+    	mensajeEncriptado=mensajeEncriptado.replace(/o/g, "ober");
+    	mensajeEncriptado=mensajeEncriptado.replace(/u/g, "ufat");
+    	
+    	console.log(mensajeEncriptado);
+    }
+
+   var button = document.querySelector ("button");
+   button.onclick = encriptar;
+
+   let elementos = document.querySelectorAll('.mi-clase');
+
+    for (let i = 0; i < elementos.length; i++) {
+    console.log(elementos[i].innerHTML);
+}
+
+   // function desencriptar (texto){
+
+    	//let mensajeDesencriptado=texto;
+    	
+    	//mensajeDesencriptado=mensajeDesencriptado.replace(/enter/g, "e");
+    	//mensajeDesencriptado=mensajeDesencriptado.replace(/imes/g, "i");
+    	//mensajeDesencriptado=mensajeDesencriptado.replace(/ai/g, "a");
+    	//mensajeDesencriptado=mensajeDesencriptado.replace(/ober/g, "o");
+    	//mensajeDesencriptado=mensajeDesencriptado.replace(/ufat/g, "u");
+    	
+    	//console.log(mensajeDesencriptado);
+  //  }
+
+   // function encriptar2 (text){
+
+    	//let msj = text.replace(/([aeiou])/g, (match, group1) => {
+  		//if (group1 === "a") return "ai";
+  		//if (group1 === "e") return "enter";
+  		//if (group1 === "o") return "ober";
+  		//if (group1 === "u") return "ufat";
+  		//if (group1 === "i") return "imes";
+  		//
+		//})
+		//imprimir(msj);
+   // }
+    
+   
+</script>
+ 

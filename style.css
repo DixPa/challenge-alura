@@ -1,0 +1,196 @@
+﻿
+.logo {
+    position: absolute;
+    margin:40px 1324.91px 936px 84px;
+}
+.texto-ingresado {
+    background: none;
+    position: absolute;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 577px;
+    height: 81px;
+    margin: 168px 623px 808px 240px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+    border:none;
+    resize: none;
+}
+.texto-ingresado::placeholder{
+    color:#0A3871;
+}
+.rectangulo {
+    position: absolute;
+    background: #FFFFFF;
+    width: 400px;
+    height: 944px;
+    margin: 40px 40px 40px 1000px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.chico {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    margin:283px 72px 437px 1032px;
+   
+}
+.texto-encriptado {
+    background: none;
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    margin: 72px 72px 171px 1032px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    /* or 36px */
+    /* Gray/gray-400 */
+    border:none;
+    outline: 0;
+    resize: none;
+    color: #495057;
+    
+}
+.mensaje{
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    margin: 619px 72px 347px 1032px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    
+    color: #343A40;
+}
+.mensaje2{
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    margin: 693px 72px 283px 1032px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 150%;
+    color: #495057;
+}
+.img-alert{
+    position:absolute;
+    margin:852px 1184px 156px 240px;
+    width:16px;
+    height:16px;   
+}
+.text-alert {
+    position: absolute;
+    width: 205px;
+    height: 18px;
+    margin: 851px 971px 155px 264px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+ }
+
+#boton1 {
+    width: 328px;
+    height: 67px;
+    margin: 885px 872px 72px 240px;
+    position: absolute;
+    padding: 24px;
+    background:#0A3871;
+    border-radius: 24px;
+    /*fuente propiedades*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#boton1:active{
+    background-color: darkblue;
+    font-weight: bold;
+    transition: 0.3s all;
+}
+
+#boton2 {
+    text-align:center;
+    width: 328px;
+    height: 67px;
+    position:absolute;
+    margin:885px 520px 72px 592px;
+    box-sizing: border-box;
+    /* Auto layout */
+    padding: 24px;
+    /* Light gray */
+    background: #D8DFE8;
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+ }
+
+ #boton2:active{
+    background-color: white;
+    font-weight: bold;
+    transition: 0.3s all;
+}
+
+#boton3 {
+    box-sizing: border-box;
+    /* Auto layout */
+    margin: 885px 72px 72px 1032px;
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    padding: 24px;
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+#boton3:active {
+    background-color: white;
+    font-weight: bold;
+    transition: 0.3s all;
+}
+ 
+@media (max-width: 480px) and (max-height:1715) {
+   
+    .logo {
+        position: absolute;
+        width: 32px;
+        height: 48px;
+        margin:24px 327px 861px 16px;
+    }
+    .texto-ingresado{
+        position: absolute;
+        width: 343px;
+        height: 48px;
+        left: 16px;
+        top: 152px;
+    }
+    .rectangulo{
+        position: absolute;
+        width: 327px;
+        height: 186px;
+        margin:707px 24px 40px 24px;
+
+    }
+    .chico, .texto-encriptado, .mensaje, .mensaje2, .img-alert, .text-alert{
+        
+        margin:auto;
+    }

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.svg" />
+        </div>
+    </header>
+    <main>
+        <section>
+            <label for="textoIngresado"></label>
+            <textarea cols="70" rows="10" id="textoIngresado" placeholder="Ingrese texto aqui" class="texto-ingresado"></textarea>
+        </section>
+        <section>
+            <div class="rectangulo"></div>
+            <img class="chico" src="imagenes/chico.png" />
+        </section>
+        <section>   
+            <label for="textoEncriptado"></label>
+            <textarea cols="70" rows="10" id="textoEncriptado"  class="texto-encriptado" readonly></textarea>
+            <h1 class="mensaje">Ningún mensaje fue <br>encontrado</h1>
+            <p class="mensaje2">Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+        </section>
+        <section>
+            <img class="img-alert" src="imagenes/alerta.png" />
+            <p class="text-alert">Solo letras minisculas y sin acentos</p>
+        </section>
+        <section>
+            <button id="boton1"> Encriptar </button>
+            <button id="boton2"> Desencriptar </button>
+            <button id="boton3"> Copiar </button>
+        </section>
+
+    </main>
+    <script src="funcion.js"></script>
+
+</body>
+</html>
